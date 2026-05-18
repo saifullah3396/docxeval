@@ -1,7 +1,5 @@
 # DocXEval: A Systematic Evaluation of Explainability in Multimodal Document Understanding
-This repository contains the datasets and code for the paper DocXEval: A Systematic Evaluation of Explainability in Multimodal Document Understanding by Saifullah, Stefan Agne, Andreas Dengel, and Sheraz Ahmed.
-
-Requires Python 3+. For evaluation, please download the data from the links below.
+This repository contains the datasets and code for the paper DocXEval: A Systematic Evaluation of Explainability in Multimodal Document Understanding by Saifullah, Stefan Agne, Andreas Dengel, and Sheraz Ahmed. Requires Python 3.11.
 
 ---
 
