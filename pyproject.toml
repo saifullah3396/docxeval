@@ -18,14 +18,12 @@ dependencies = [
     "streamlit>=1.52.2",
     "streamlit-aggrid>=1.2.1.post2",
     "streamlit-pdf-viewer>=0.0.26",
-    "torchxai",
     "uvicorn>=0.40.0",
 ]
 
 [tool.uv.sources]
-torchxai = { path = "../torchxai", editable = true }
-atriaml = { path = "../atria", editable = true }
 critdd = { git = "https://github.com/mirkobunse/critdd" }
+atriaml = { git = "https://github.com/atriaml/atria", rev = "v0.0.0-alpha" }
 
 [dependency-groups]
 dev = [

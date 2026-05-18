@@ -201,7 +201,7 @@ wheels = [
 [[package]]
 name = "atria-datasets"
 version = "0.0.0"
-source = { editable = "../atria/atria_datasets" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_datasets&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "atria-logger" },
     { name = "atria-registry" },
@@ -240,62 +240,10 @@ dependencies = [
     { name = "wids" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "atria-logger", editable = "../atria/atria_logger" },
-    { name = "atria-registry", editable = "../atria/atria_registry" },
-    { name = "atria-transforms", editable = "../atria/atria_transforms" },
-    { name = "atria-types", editable = "../atria/atria_types" },
-    { name = "boto3", specifier = ">=1.39.4" },
-    { name = "coverage", marker = "extra == 'test'" },
-    { name = "datadings", git = "https://github.com/saifullah3396/datadings.git" },
-    { name = "datasets", specifier = "==3.4" },
-    { name = "deltalake", specifier = ">=1.0.2" },
-    { name = "docile-benchmark", specifier = ">=0.3.4" },
-    { name = "editdistance", specifier = ">=0.8.1" },
-    { name = "einops", specifier = ">=0.8.1" },
-    { name = "filelock", specifier = ">=3.18.0" },
-    { name = "fire", specifier = ">=0.7.0" },
-    { name = "gdown", specifier = ">=5.2.0" },
-    { name = "hydra-core", specifier = "==1.3.2" },
-    { name = "hydra-zen", specifier = "==0.14.0" },
-    { name = "lakefs", specifier = ">=0.11.1" },
-    { name = "lazy-loader", specifier = ">=0.4" },
-    { name = "msgpack", specifier = ">=1.1.1" },
-    { name = "pandarallel", specifier = ">=1.6.5" },
-    { name = "pandas", specifier = ">=2.3.1" },
-    { name = "pdfplumber", specifier = ">=0.11.8" },
-    { name = "pyarrow-hotfix", specifier = ">=0.7" },
-    { name = "pycocotools", specifier = ">=2.0.10" },
-    { name = "pytest", marker = "extra == 'test'" },
-    { name = "pyyaml", specifier = ">=6.0.2" },
-    { name = "ray", specifier = ">=2.47.1" },
-    { name = "requests", specifier = ">=2.32.4" },
-    { name = "ruff", specifier = ">=0.12.12" },
-    { name = "sacremoses", specifier = ">=0.1.1" },
-    { name = "scikit-learn", specifier = ">=1.7.0" },
-    { name = "textdistance", specifier = ">=4.2.0" },
-    { name = "tqdm", specifier = ">=4.67.1" },
-    { name = "transformers", specifier = "==4.53.3" },
-    { name = "webdataset", specifier = ">=1.0.2" },
-    { name = "wids", specifier = ">=0.1.11" },
-]
-provides-extras = ["test"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.9.2" },
-    { name = "factory-boy", specifier = ">=3.3.3" },
-    { name = "ipykernel", specifier = ">=6.28.1" },
-    { name = "mypy", specifier = ">=1.16.1" },
-    { name = "pytest", specifier = ">=8.4.1" },
-    { name = "ruff", specifier = ">=0.12.2" },
-]
-
 [[package]]
 name = "atria-insights"
 version = "0.0.0"
-source = { editable = "../atria/atria_insights" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_insights&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "atria-metrics" },
     { name = "atria-ml" },
@@ -306,51 +254,20 @@ dependencies = [
     { name = "torchxai" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "atria-metrics", editable = "../atria/atria_metrics" },
-    { name = "atria-ml", editable = "../atria/atria_ml" },
-    { name = "atria-models", editable = "../atria/atria_models" },
-    { name = "atria-transforms", editable = "../atria/atria_transforms" },
-    { name = "captum", specifier = "==0.7.0" },
-    { name = "coverage", marker = "extra == 'test'" },
-    { name = "lime", specifier = ">=0.2.0.1" },
-    { name = "torchxai" },
-]
-provides-extras = ["test"]
-
 [[package]]
 name = "atria-logger"
 version = "0.1.8"
-source = { editable = "../atria/atria_logger" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_logger&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "coloredlogs" },
     { name = "lazy-loader" },
     { name = "rich" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "coloredlogs", specifier = ">=15.0.1" },
-    { name = "coverage", marker = "extra == 'test'" },
-    { name = "lazy-loader", specifier = ">=0.4" },
-    { name = "pytest", marker = "extra == 'test'" },
-    { name = "rich", specifier = ">=14.0.0" },
-]
-provides-extras = ["test"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.12.0" },
-    { name = "mypy", specifier = ">=1.18.2" },
-    { name = "pytest", specifier = ">=9.0.1" },
-    { name = "ruff", specifier = ">=0.14.6" },
-]
-
 [[package]]
 name = "atria-metrics"
 version = "0.0.0"
-source = { editable = "../atria/atria_metrics" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_metrics&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "anls" },
     { name = "atria-registry" },
@@ -360,20 +277,10 @@ dependencies = [
     { name = "seqeval" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "anls", specifier = ">=0.0.2" },
-    { name = "atria-registry", editable = "../atria/atria_registry" },
-    { name = "atria-types", editable = "../atria/atria_types" },
-    { name = "due-evaluator", git = "https://github.com/due-benchmark/evaluator.git" },
-    { name = "pytorch-ignite", specifier = ">=0.5.2" },
-    { name = "seqeval" },
-]
-
 [[package]]
 name = "atria-ml"
 version = "0.0.0"
-source = { editable = "../atria/atria_ml" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_ml&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "anls" },
     { name = "codename" },
@@ -391,46 +298,10 @@ dependencies = [
     { name = "transformers" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "anls", specifier = ">=0.0.2" },
-    { name = "codename", specifier = ">=1.1" },
-    { name = "diffusers", specifier = ">=0.34.0" },
-    { name = "h5py", specifier = ">=3.14.0" },
-    { name = "mmcv", url = "https://download.openmmlab.com/mmcv/dist/cu121/torch2.1.0/mmcv-2.1.0-cp311-cp311-manylinux1_x86_64.whl" },
-    { name = "mmdet", specifier = "==3.3.0" },
-    { name = "pyqt5", specifier = ">=5.15.11" },
-    { name = "pytorch-ignite", specifier = ">=0.5.2" },
-    { name = "tensorboard", specifier = ">=2.20.0" },
-    { name = "tensorboardx", specifier = ">=2.6.4" },
-    { name = "textdistance", specifier = ">=4.2.0" },
-    { name = "timm", specifier = ">=1.0.17" },
-    { name = "torchinfo", specifier = ">=1.8.0" },
-    { name = "transformers", specifier = ">=4.37.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.9.2" },
-    { name = "ipykernel", specifier = ">=6.28.1" },
-    { name = "mypy", specifier = ">=1.16.1" },
-    { name = "pytest", specifier = ">=8.4.1" },
-    { name = "ruff", specifier = ">=0.12.2" },
-    { name = "tuna", specifier = ">=0.5.11" },
-]
-torch-cpu = [
-    { name = "torch", specifier = "==2.1.2", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "atria-ml", group = "torch-cpu" } },
-    { name = "torchvision", specifier = "==0.16.2", index = "https://download.pytorch.org/whl/cpu", conflict = { package = "atria-ml", group = "torch-cpu" } },
-]
-torch-gpu = [
-    { name = "torch", specifier = "==2.1.2", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "atria-ml", group = "torch-gpu" } },
-    { name = "torchvision", specifier = "==0.16.2", index = "https://download.pytorch.org/whl/cu121", conflict = { package = "atria-ml", group = "torch-gpu" } },
-]
-
 [[package]]
 name = "atria-models"
 version = "0.0.0"
-source = { editable = "../atria/atria_models" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_models&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "atria-logger" },
     { name = "atria-metrics" },
@@ -445,54 +316,19 @@ dependencies = [
     { name = "transformers" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "atria-logger", editable = "../atria/atria_logger" },
-    { name = "atria-metrics", editable = "../atria/atria_metrics" },
-    { name = "atria-registry", editable = "../atria/atria_registry" },
-    { name = "atria-transforms", editable = "../atria/atria_transforms" },
-    { name = "diffusers", specifier = ">=0.34.0" },
-    { name = "mmcv", url = "https://download.openmmlab.com/mmcv/dist/cu121/torch2.1.0/mmcv-2.1.0-cp311-cp311-manylinux1_x86_64.whl" },
-    { name = "mmdet", specifier = "==3.3.0" },
-    { name = "pytorch-ignite", specifier = ">=0.5.2" },
-    { name = "timm", specifier = ">=1.0.17" },
-    { name = "torchinfo", specifier = ">=1.8.0" },
-    { name = "transformers", specifier = ">=4.37.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.9.2" },
-    { name = "factory-boy", specifier = ">=3.3.3" },
-    { name = "ipykernel", specifier = ">=6.28.1" },
-    { name = "mypy", specifier = ">=1.16.1" },
-    { name = "openapi-python-client", specifier = ">=0.25.2" },
-    { name = "pytest", specifier = ">=8.4.1" },
-    { name = "ruff", specifier = ">=0.12.2" },
-]
-
 [[package]]
 name = "atria-registry"
 version = "0.0.0"
-source = { editable = "../atria/atria_registry" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_registry&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "hydra-core" },
     { name = "hydra-zen" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "coverage", marker = "extra == 'test'" },
-    { name = "hydra-core", specifier = "==1.3.2" },
-    { name = "hydra-zen", specifier = "==0.14.0" },
-    { name = "pytest", marker = "extra == 'test'" },
-]
-provides-extras = ["test"]
-
 [[package]]
 name = "atria-transforms"
 version = "0.0.0"
-source = { editable = "../atria/atria_transforms" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_transforms&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "atria-registry" },
     { name = "atria-types" },
@@ -503,34 +339,10 @@ dependencies = [
     { name = "typeguard" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "atria-registry", editable = "../atria/atria_registry" },
-    { name = "atria-types", editable = "../atria/atria_types" },
-    { name = "coverage", marker = "extra == 'test'" },
-    { name = "mmcv", url = "https://download.openmmlab.com/mmcv/dist/cu121/torch2.1.0/mmcv-2.1.0-cp311-cp311-manylinux1_x86_64.whl" },
-    { name = "mmdet", specifier = "==3.3.0" },
-    { name = "pytesseract", specifier = ">=0.3.13" },
-    { name = "pytest", marker = "extra == 'test'" },
-    { name = "transformers", specifier = ">=4.37.0" },
-    { name = "typeguard", specifier = ">=4.4.4" },
-]
-provides-extras = ["test"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.9.2" },
-    { name = "factory-boy", specifier = ">=3.3.3" },
-    { name = "ipykernel", specifier = ">=6.28.1" },
-    { name = "mypy", specifier = ">=1.16.1" },
-    { name = "pytest", specifier = ">=8.4.1" },
-    { name = "ruff", specifier = ">=0.12.2" },
-]
-
 [[package]]
 name = "atria-types"
 version = "0.0.0"
-source = { editable = "../atria/atria_types" }
+source = { git = "https://github.com/atriaml/atria?subdirectory=atria_types&rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "atria-logger" },
     { name = "beautifulsoup4" },
@@ -555,46 +367,10 @@ dependencies = [
     { name = "torchvision" },
 ]
 
-[package.metadata]
-requires-dist = [
-    { name = "atria-logger", editable = "../atria/atria_logger" },
-    { name = "beautifulsoup4", specifier = ">=4.12.2" },
-    { name = "codename", specifier = ">=1.1" },
-    { name = "coverage", marker = "extra == 'test'" },
-    { name = "factory-boy", specifier = ">=3.3.3" },
-    { name = "imagesize", specifier = ">=1.4.1" },
-    { name = "lazy-loader", specifier = ">=0.4" },
-    { name = "lxml", specifier = ">=6.0.0" },
-    { name = "numpy", specifier = ">=1.26.4" },
-    { name = "omegaconf", specifier = ">=2.3.0" },
-    { name = "pdf2image", specifier = ">=1.17.0" },
-    { name = "pdfplumber", specifier = ">=0.11.8" },
-    { name = "pillow", specifier = ">=11.0.0" },
-    { name = "pyarrow", specifier = ">=20.0.0" },
-    { name = "pydantic", specifier = ">=2.11.7" },
-    { name = "pymupdf", specifier = ">=1.26.3" },
-    { name = "pypdf2", specifier = ">=3.0.1" },
-    { name = "pytesseract", specifier = ">=0.3.13" },
-    { name = "pytest", marker = "extra == 'test'" },
-    { name = "requests", specifier = ">=2.32.5" },
-    { name = "rich", specifier = ">=14.0.0" },
-    { name = "torch", specifier = "==2.1.2" },
-    { name = "torchvision", specifier = "==0.16.2" },
-]
-provides-extras = ["test"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.12.0" },
-    { name = "mypy", specifier = ">=1.18.2" },
-    { name = "pytest", specifier = ">=9.0.1" },
-    { name = "ruff", specifier = ">=0.14.6" },
-]
-
 [[package]]
 name = "atriaml"
 version = "0.1.0"
-source = { editable = "../atria" }
+source = { git = "https://github.com/atriaml/atria?rev=v0.0.0-alpha#42c8f001da72fc0418378ce792706830b14cab3d" }
 dependencies = [
     { name = "atria-datasets" },
     { name = "atria-insights" },
@@ -610,39 +386,7 @@ dependencies = [
     { name = "h5typer" },
     { name = "joblib" },
     { name = "jupytext" },
-    { name = "torchxai" },
     { name = "tuna" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "atria-datasets", editable = "../atria/atria_datasets" },
-    { name = "atria-insights", editable = "../atria/atria_insights" },
-    { name = "atria-logger", editable = "../atria/atria_logger" },
-    { name = "atria-metrics", editable = "../atria/atria_metrics" },
-    { name = "atria-ml", editable = "../atria/atria_ml" },
-    { name = "atria-models", editable = "../atria/atria_models" },
-    { name = "atria-registry", editable = "../atria/atria_registry" },
-    { name = "atria-transforms", editable = "../atria/atria_transforms" },
-    { name = "atria-types", editable = "../atria/atria_types" },
-    { name = "coloredlogs", specifier = ">=15.0.1" },
-    { name = "fire", specifier = ">=0.7.1" },
-    { name = "h5typer", specifier = ">=0.2.0" },
-    { name = "joblib", specifier = ">=1.5.2" },
-    { name = "jupytext", specifier = ">=1.18.1" },
-    { name = "torchxai", editable = "../torchxai" },
-    { name = "tuna", specifier = ">=0.5.11" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.12.0" },
-    { name = "faker", specifier = ">=38.2.0" },
-    { name = "ipywidgets", specifier = ">=8.1.8" },
-    { name = "mypy", specifier = ">=1.18.2" },
-    { name = "pytest", specifier = ">=9.0.1" },
-    { name = "ruff", specifier = ">=0.14.6" },
-    { name = "types-requests", specifier = ">=2.32.4.20250913" },
 ]
 
 [[package]]
@@ -1149,7 +893,6 @@ dependencies = [
     { name = "streamlit" },
     { name = "streamlit-aggrid" },
     { name = "streamlit-pdf-viewer" },
-    { name = "torchxai" },
     { name = "uvicorn" },
 ]
 
@@ -1160,7 +903,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "atriaml", editable = "../atria" },
+    { name = "atriaml", git = "https://github.com/atriaml/atria?rev=v0.0.0-alpha" },
     { name = "critdd", git = "https://github.com/mirkobunse/critdd" },
     { name = "debugpy", specifier = ">=1.8.17" },
     { name = "fastapi", specifier = ">=0.128.0" },
@@ -1173,7 +916,6 @@ requires-dist = [
     { name = "streamlit", specifier = ">=1.52.2" },
     { name = "streamlit-aggrid", specifier = ">=1.2.1.post2" },
     { name = "streamlit-pdf-viewer", specifier = ">=0.0.26" },
-    { name = "torchxai", editable = "../torchxai" },
     { name = "uvicorn", specifier = ">=0.40.0" },
 ]
 
@@ -4094,7 +3836,7 @@ wheels = [
 [[package]]
 name = "torchxai"
 version = "0.0.0"
-source = { editable = "../torchxai" }
+source = { git = "https://github.com/saifullah3396/torchxai.git?branch=atria-bridge#af408fde1a4c7a0e0582b3a4811850f6b9f13c04" }
 dependencies = [
     { name = "autopep8" },
     { name = "captum" },
@@ -4116,41 +3858,6 @@ dependencies = [
     { name = "torch" },
     { name = "torchvision" },
     { name = "tqdm" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "autopep8", specifier = ">=2.1.0" },
-    { name = "captum", specifier = "==0.7.0" },
-    { name = "click", specifier = ">=8.0.0" },
-    { name = "hydra-core", specifier = ">=1.3.2" },
-    { name = "mkdocs", specifier = ">=1.6.1" },
-    { name = "mkdocs-material", specifier = ">=9.7.0" },
-    { name = "mkdocs-shadcn", specifier = ">=0.9.8" },
-    { name = "mkdocstrings", extras = ["python"], specifier = ">=1.0.0" },
-    { name = "numpy", specifier = "<2.0" },
-    { name = "omegaconf", specifier = ">=2.3.0" },
-    { name = "overrides", specifier = ">=7.7.0" },
-    { name = "pandas", specifier = ">=2.3.3" },
-    { name = "pydantic", specifier = ">=2.12.5" },
-    { name = "pytest", specifier = ">=8.3.4" },
-    { name = "pytorch-ignite", specifier = ">=0.5.0.post2" },
-    { name = "scikit-learn", specifier = ">=1.8.0" },
-    { name = "scipy", specifier = ">=1.16.3" },
-    { name = "torch", specifier = "==2.1.2" },
-    { name = "torchvision", specifier = ">=0.16.2" },
-    { name = "tqdm", specifier = ">=4.66.4" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "coverage", specifier = ">=7.12.0" },
-    { name = "faker", specifier = ">=38.2.0" },
-    { name = "ipywidgets", specifier = ">=8.1.8" },
-    { name = "mypy", specifier = ">=1.18.2" },
-    { name = "pytest", specifier = ">=9.0.1" },
-    { name = "ruff", specifier = ">=0.14.6" },
-    { name = "types-requests", specifier = ">=2.32.4.20250913" },
 ]
 
 [[package]]
