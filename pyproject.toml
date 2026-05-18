@@ -1,0 +1,36 @@
+[project]
+name = "docxeval"
+version = "0.1.0"
+description = "DocXEval: A Benchmark for Evaluation XAI on Document Understanding Tasks"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+    "atriaml",
+    "critdd",
+    "debugpy>=1.8.17",
+    "fastapi>=0.128.0",
+    "igraph>=1.0.0",
+    "ipykernel==6.5",
+    "nltk>=3.9.4",
+    "pillow>=12.0.0",
+    "rpy2>=3.6.7",
+    "seaborn>=0.13.2",
+    "streamlit>=1.52.2",
+    "streamlit-aggrid>=1.2.1.post2",
+    "streamlit-pdf-viewer>=0.0.26",
+    "torchxai",
+    "uvicorn>=0.40.0",
+]
+
+[tool.uv.sources]
+torchxai = { path = "../torchxai", editable = true }
+atriaml = { path = "../atria", editable = true }
+critdd = { git = "https://github.com/mirkobunse/critdd" }
+
+[dependency-groups]
+dev = [
+    "fire>=0.7.1",
+]
+
+[tool.uv]
+package = true
